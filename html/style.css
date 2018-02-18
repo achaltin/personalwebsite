@@ -1,17 +1,22 @@
 /*style.css*/
 body{
- background-color:#E2E2E2;
- font-family:"Trebuchet MS", Helvetica, sans-serif;
+	background-color:#E2E2E2;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 h1{
- color:#D10808;
+	color:#D10808;
 }
 h3{
 	color:#D10808;
 	font-variant: small-caps;
 }
+h4{
+	color:#D10808;
+	font-variant: small-caps;
+	text-decoration:underline;
+}
 p{
- color:#D10808;
+	color:#D10808;
 }
 #selected{
 	color:white;
