@@ -4,12 +4,20 @@ body{
 	font-family:"Century Gothic";
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-top: 5%;
+	margin-bottom:5%;
 }
 h1{
 	color:#D10808;
 }
+h2{
+	color:black;
+	margin-bottom:0;
+}
 h3{
 	color:#D10808;
+	margin-bottom:0;
+	margin-top:0;
 }
 h4{
 	color:#D10808;
@@ -18,24 +26,99 @@ h4{
 p{
 	font-family: "Century";
 	color:darkslategrey;
-	max-width: 700px  /*for readability */
+	max-width: 700px;  /*for readability */
+	padding:0;
+	margin-top:0;
+	margin-bottom:0;
 }
-#selected{
-	color:white;
-	text-decoration: underline;
+p.small{
+	font-variant: small-caps;
+	font-family: "Century";
+	color:darkslategrey;
+	max-width: 700px;  /*for readability */
+	padding:0;
+	margin-top:0;
+	margin-bottom:0;
 }
-.nav{
+ul{
+	font-family:"Century";
+	color:darkslategrey;
+	list-style:none;
+	max-width: 700px;
+	padding:0;
+	margin-top:0;
+}
+li::before{
+	content:">  ";
+	color:#D10808;
+	max-width: 700px;
+}
+table{
+	table-layout: fixed;
+	max-width: 700px;
+	overflow-wrap: normal;
+	margin-top:0;
+}
+td{
+	margin-top:0;
+	width:50%;
+	padding: 0;
+	vertical-align: top;
+}
+th{
+	margin-top:0;
+	text-align: left;
+}
+nav{
 	text-align: center;
 	background-color:#D10808;
 	color:darkslategrey;
 	padding-top:10px;
 	padding-bottom:2px;
 }
-a:link, a:visited, a:active{
+a:link, a:visited{
 	color:darkgrey;
 	text-decoration:underline;
 }
-a:hover{
+a.page:link, a.page:visited{
+	color:darkslategrey;
+	text-decoration:underline;
+}
+a.resume:link, a.resume:visited{
+	color:black;
+	text-decoration: none;
+}
+a:hover, a:active{
 	color:white;
 	
+}
+a.page:hover, a.page:active, a.resume:hover, a.resume:active{
+	color:grey;
+}
+
+/*hover over a link*/
+.hoverhelp {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted darkslategray; 
+}
+
+/*text that pops up when hovering over a link */
+.hoverhelp .text {
+    visibility: hidden;
+    background-color: grey;
+    color: white;
+    text-align: center;
+	padding: 5px 0;
+	font-family:"Century";
+	width:250px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show text when hovering */
+.hoverhelp:hover .text {
+	visibility: visible;
 }
