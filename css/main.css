@@ -1,22 +1,24 @@
 /*main.css*/
 body{
 	background-color:#E2E2E2;
-	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-family:"Century Gothic";
+	margin-left: 10%;
+	margin-right: 10%;
 }
 h1{
 	color:#D10808;
 }
 h3{
 	color:#D10808;
-	font-variant: small-caps;
 }
 h4{
 	color:#D10808;
-	font-variant: small-caps;
 	text-decoration:underline;
 }
 p{
-	color:#D10808;
+	font-family: "Century";
+	color:darkslategrey;
+	max-width: 700px  /*for readability */
 }
 #selected{
 	color:white;
@@ -24,13 +26,13 @@ p{
 }
 .nav{
 	text-align: center;
-	background-color:#6b0000;
-	color:grey;
+	background-color:#D10808;
+	color:darkslategrey;
 	padding-top:10px;
 	padding-bottom:2px;
 }
 a:link, a:visited, a:active{
-	color:grey;
+	color:darkgrey;
 	text-decoration:underline;
 }
 a:hover{
