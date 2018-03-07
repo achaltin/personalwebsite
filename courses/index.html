@@ -4,25 +4,88 @@
 <head>
   <title>Amelia's Coursework</title>
   <link rel = "stylesheet"
+  type = "text/css"
+  href = "../css/reset.css" />
+  <link rel = "stylesheet"
    type = "text/css"
    href = "../css/main.css" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta charset="utf-8"
 </head>
 <body>
     <header>
-        <h1 align = "center">Amelia Chaltin</h1>
-        <h3 align = "center">Illinois Institute of Technology | BS Computer Science | MAS Data Science | Coterminal Graduation 2020</h3>
-      </header> 
+        <h1 class="heading">Amelia Chaltin</h1>
+        <p class="headline">Illinois Institute of Technology | BS Computer Science | MAS Data Science | Coterminal Graduation 2020</p> 
+    <nav>
+      <ul>
+        <li class="nav"><a href="../index.html">Home</a> | </li>
+        <li class="nav"><a href = "../industry-experience/index.html">Industry Experience</a> |</li>
+        <li class="nav"><a href ="../other-experience/index.html">Other Work Experience</a> |</li>
+        <li class="nav"><a href ="../courses/index.html">Coursework</a> |</li>
+        <li class="nav"><a href ="../campus-involvement/index.html">Campus Involvement</a> |</li>
+        <li class="nav"><a href ="../volunteer-experience/index.html">Volunteer Work</a> |</li>
+        <li class="nav"><a href ="../contact/index.html">Get in Touch with Me</a> </li>
+      </ul>
+    </nav>
+  </header> 
+  <h2>Coursework</h2>
+  <p>Due to University ethics, code for assignments will not be posted, but I'm happy to share upon request.</p>
+  <hr>
+  <section class="course">
+    <h3>SCI 522: Public Engagement for Scientists</h3>
+    <p class="main">Public Engagement for Scientists is my first graduate course in pursuit of my Data Science Master's. 
+      We focus on learning how to present our science in a way that is digestible and engaging to the public. For example, 
+      for class, we worked on entries for the "Flame Challenge," an international competition to answer a scientific question
+      for 11-year-olds. I loved the work I was able to do, and chose to enter my work into the competition. 
+    </p>
+    <aside>
+      View my <a href="https://www.youtube.com/watch?v=3w5e02Ji2iQ">Flame Challenge Entry</a>
+      <br/><br/>
+      Learn more about the <a href="https://www.aldacenter.org/outreach/flame-challenge">Flame Challenge</a>
+    </aside>
+  </section>
+  <hr>
+  <section class="course">
+    <h3>CS 425: Database Organization</h3>
+    <p class="main">
+      In Database Organization, we focused on traditional relational databases. For our semester long project,
+      we were tasked to work in groups to create a database driven web application. The only requirement was to 
+      use a relational database, and have logon privileges for at least three different user roles.
+      <br/><br>
+      My team chose to use the Agile Process to develop our application. We built a web application for vendors, warehouse 
+      managers, and admins to manage products available for wholesale out of warehouses. The application was built on a 
+      MySQL database, and used Node.js and Persistent.js to create the interface.
+    </p>
+    <aside>
+      <img class="aside" src="../images/erdplus-diagram.png" alt="Entity Relationship Diagram of Warehouse Database">
+      Here is the Entity Relationship Diagram for our Warehouse Database. 
+    </aside>
+  </section>
+  <hr>
+  <section class="course">
+    <h3>CS 351: Systems Programming</h3>
+    <p class = "main">For this course, we focused heavily on understanding and implementing functions of a 
+      Computer System. The most memberable projects were simulators for a Shell, Cache, and Dynamic Memory Allocator.
+    </p>
+    <h4 class="main">Shell Simulator</h4>
+    <p class="main">We were tasked with creating a shell simulator that functioned like existing Linux shells.
+      I worked to create a REPL that could handle foreground and background processes, and provide abstraction for system calls.
+    </p>
+    <h4 class="main">Cache Simulator</h4>
+    <p class="main">I created a program that would take instructions for memory (load, store, or modify),
+      parse the address, and determine whether the instruction caused a hit or miss. I then created a program to 
+      test the efficiency of the cache, and optimize utilization in a matrix multiplication problem. 
+    </p>
+    <h4 class="main">Dynamic Memory Allocator Simulator</h4>
+    <p class = "main"> 
+      The DMA simulator is by far the most challenging project I have ever completed. I simulated the heap
+      in memory without using any existing memory functions (like malloc(), free(), or sbrk()). What helped me
+      incredibly in this project was the use of macros in C, not only for many of the function defintions to manage
+      addresses, heap headers, and heap footers, but also to debug without slowing down the runtime efficiency.
+    </p>
+  </section>
+  <hr>
   
-  <nav>
-	  <a href="../index.html">Home</a> |
-      <a href="../industry-experience/index.html">Industry Experience</a> |
-      <a href ="../other-experience/index.html">Other Work Experience</a> |
-      <a href "../courses/index.html">Coursework</a> |
-      <a href ="../campus-involvement/index.html">Campus Involvement</a> |
-      <a href ="../volunteer-experience/index.html">Volunteer Work</a> |
-	  <a href ="../contact/index.html">Get in Touch with Me</a> 
-  </nav>
-  <h1 align = "center">Coursework</h1>
+
 </body>
 </html>

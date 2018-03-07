@@ -1,57 +1,119 @@
 /*main.css*/
+html{
+	background-color:#D10808;
+}
 body{
 	background-color:#E2E2E2;
-	font-family:"Century Gothic";
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 5%;
-	margin-bottom:5%;
+	font-family:"Century Gothic", "sans-serif";
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom:0;
+	max-width: 800px;
+	padding:2%;
+	height:100%;
 }
 h1{
+	font-size:2em;
 	color:#D10808;
+	margin-bottom:2px;
+	font-weight: bold;
+}
+.heading{
+	text-align: center;
 }
 h2{
+	font-size:1.5em;
 	color:black;
-	margin-bottom:0;
+	margin-bottom:2px;
+	margin-top:5px;
+	font-weight: bold;
 }
 h3{
+	font-size:1.25em;
 	color:#D10808;
-	margin-bottom:0;
-	margin-top:0;
+	margin-top:3px;
+	margin-bottom: 2px;
+	font-weight: bold;
 }
 h4{
+	font-size:1em;
 	color:#D10808;
 	text-decoration:underline;
+	margin-top:3px;
+	margin-bottom: 3px;
 }
 p{
-	font-family: "Century";
+	font-family: "Century", "serif";
 	color:darkslategrey;
-	max-width: 700px;  /*for readability */
+	padding:0;
+	margin-top:0;
+	margin-bottom:3px;
+}
+
+p.date{
+	font-variant: small-caps;
+	font-family: "Century", "serif";
+	color:darkslategrey;
 	padding:0;
 	margin-top:0;
 	margin-bottom:0;
 }
-p.small{
-	font-variant: small-caps;
-	font-family: "Century";
+p.headline{
+	color:#D10808;
+	font-family:"Century Gothic Bold", "Century Gothic", "sans-serif";
+	text-align:center;
+	font-weight:bold;
+}
+blockquote{
+	font-family:"Century", "serif";
+	font-style:italic;
 	color:darkslategrey;
-	max-width: 700px;  /*for readability */
-	padding:0;
-	margin-top:0;
-	margin-bottom:0;
+	margin-left:10px;
+}
+blockquote::before{
+	content:""";
+}
+blockquote::after{
+	content:""";
+}
+.activity{
+	width:100%;
+}
+.main{
+	width:65%;
+	float:left;
+}
+aside{
+	font-style:italic;
+	color:darkgrey;
+	width:30%;
+	float:right;
+	font-family:"Century", "serif";
+	position:relative;
+	font-size:.75em;
+}
+img.aside{
+	width:225px;
+	border-width: 2px;
+	border-color: #D10808;
+	border-style:solid;
 }
 ul{
-	font-family:"Century";
+	font-family:"Century", "serif";
 	color:darkslategrey;
 	list-style:none;
-	max-width: 700px;
 	padding:0;
-	margin-top:0;
+	margin-bottom:3px;
 }
 li::before{
 	content:">  ";
 	color:#D10808;
-	max-width: 700px;
+}
+li.nav{
+	display:inline;
+	font-family: "Century Gothic", "sans-serif";
+
 }
 table{
 	table-layout: fixed;
@@ -100,7 +162,7 @@ a.page:hover, a.page:active, a.resume:hover, a.resume:active{
 .hoverhelp {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted darkslategray; 
+	border-bottom: 1px dotted darkslategray; 
 }
 
 /*text that pops up when hovering over a link */
@@ -121,4 +183,16 @@ a.page:hover, a.page:active, a.resume:hover, a.resume:active{
 /* Show text when hovering */
 .hoverhelp:hover .text {
 	visibility: visible;
+}
+
+/* add column layouts */
+section{
+	float:left;
+	width: 100%;
+}
+.left{
+	width: 50%;
+}
+.right{
+	width: 50%;
 }
