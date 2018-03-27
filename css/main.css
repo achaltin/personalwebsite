@@ -1,10 +1,10 @@
 /*main.css*/
 html{
-	background-color:#D10808;
+	background-color:lightgrey;
 }
 body{
 	background-color:#E2E2E2;
-	font-family:"Century Gothic", "sans-serif";
+	font-family:'Bree Serif', "Century Gothic", serif;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
@@ -12,17 +12,20 @@ body{
 	max-width: 800px;
 	padding:2%;
 	height:100%;
+	letter-spacing:.5px;
+	border: 2px dotted #D10808;
 }
 h1{
 	font-size:2em;
 	color:#D10808;
-	margin-bottom:2px;
+	margin-bottom:10px;
 	font-weight: bold;
 }
 .heading{
 	text-align: center;
 }
 h2{
+	clear:left;
 	font-size:1.5em;
 	color:black;
 	margin-bottom:2px;
@@ -39,21 +42,26 @@ h3{
 h4{
 	font-size:1em;
 	color:#D10808;
-	text-decoration:underline;
-	margin-top:3px;
-	margin-bottom: 3px;
+	margin-top:5px;
+	margin-bottom: 2px;
 }
 p{
-	font-family: "Century", "serif";
+	font-family:'Signika', Century, sans-serif;
 	color:darkslategrey;
-	padding:0;
+	padding:2px;
 	margin-top:0;
-	margin-bottom:3px;
+	margin-bottom:5px;
+}
+em{
+	font-style: italic;
+}
+strong{
+	font-weight: bold;
 }
 
 p.date{
 	font-variant: small-caps;
-	font-family: "Century", "serif";
+	font-family: 'Signika', Century, sans-serif;
 	color:darkslategrey;
 	padding:0;
 	margin-top:0;
@@ -61,21 +69,22 @@ p.date{
 }
 p.headline{
 	color:#D10808;
-	font-family:"Century Gothic Bold", "Century Gothic", "sans-serif";
+	font-family:'Signika', "Century Gothic Bold", sans-serif;
 	text-align:center;
 	font-weight:bold;
+	margin-bottom:10px;	
 }
 blockquote{
-	font-family:"Century", "serif";
+	font-family:'Signika', Century, sans-serif;
 	font-style:italic;
 	color:darkslategrey;
 	margin-left:10px;
 }
 blockquote::before{
-	content:""";
+	content:open-quote;
 }
 blockquote::after{
-	content:""";
+	content:close-quote;
 }
 .activity{
 	width:100%;
@@ -89,9 +98,12 @@ aside{
 	color:darkgrey;
 	width:30%;
 	float:right;
-	font-family:"Century", "serif";
+	font-family:'Bree Serif', Century, sans-serif;
 	position:relative;
 	font-size:.75em;
+}
+a.aside:link, a.aside:visited{
+	color:darkgrey;
 }
 img.aside{
 	width:225px;
@@ -100,46 +112,42 @@ img.aside{
 	border-style:solid;
 }
 ul{
-	font-family:"Century", "serif";
+	font-family:'Signika', Century, sans-serif;
 	color:darkslategrey;
 	list-style:none;
-	padding:0;
-	margin-bottom:3px;
+	padding:2px;
+	margin-bottom:5px;
 }
 li::before{
 	content:">  ";
 	color:#D10808;
+	padding-right:5px;
 }
+
 li.nav{
 	display:inline;
-	font-family: "Century Gothic", "sans-serif";
-
+	font-family: 'Signika', Century, sans-serif;
+	list-style-position:inside;
+	padding:1%;
+	white-space:nowrap;
+	text-decoration: bold;
 }
-table{
-	table-layout: fixed;
-	max-width: 700px;
-	overflow-wrap: normal;
-	margin-top:0;
-}
-td{
-	margin-top:0;
-	width:50%;
-	padding: 0;
-	vertical-align: top;
-}
-th{
-	margin-top:0;
-	text-align: left;
+li.nav::before{
+	content:none;
+	padding:0;
 }
 nav{
 	text-align: center;
 	background-color:#D10808;
-	color:darkslategrey;
-	padding-top:10px;
-	padding-bottom:2px;
+	color:lightgrey;
+	padding:1%;
+	font-weight:bold;
+}
+nav::after{
+	content:"\A"; /*new line*/
 }
 a:link, a:visited{
-	color:darkgrey;
+	color:lightgrey;
 	text-decoration:underline;
 }
 a.page:link, a.page:visited{
@@ -148,7 +156,7 @@ a.page:link, a.page:visited{
 }
 a.resume:link, a.resume:visited{
 	color:black;
-	text-decoration: none;
+	text-decoration: underline dotted;
 }
 a:hover, a:active{
 	color:white;
@@ -156,33 +164,6 @@ a:hover, a:active{
 }
 a.page:hover, a.page:active, a.resume:hover, a.resume:active{
 	color:grey;
-}
-
-/*hover over a link*/
-.hoverhelp {
-    position: relative;
-    display: inline-block;
-	border-bottom: 1px dotted darkslategray; 
-}
-
-/*text that pops up when hovering over a link */
-.hoverhelp .text {
-    visibility: hidden;
-    background-color: grey;
-    color: white;
-    text-align: center;
-	padding: 5px 0;
-	font-family:"Century";
-	width:250px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-}
-
-/* Show text when hovering */
-.hoverhelp:hover .text {
-	visibility: visible;
 }
 
 /* add column layouts */
@@ -195,4 +176,26 @@ section{
 }
 .right{
 	width: 50%;
+}
+
+@media screen and (max-width:450px){
+	.left{
+		width:100%;
+	}
+	.right{
+		width:100%;
+	}
+	.main{
+		width:100%;
+	}
+	aside{
+		width:100%;
+		float:left;
+	}
+	li.nav{
+		display:block
+	}
+	img.aside{
+		width:100%;
+	}
 }
