@@ -104,12 +104,18 @@ aside{
 }
 a.aside:link, a.aside:visited{
 	color:darkgrey;
+	
 }
 img.aside{
 	width:225px;
 	border-width: 2px;
 	border-color: #D10808;
 	border-style:solid;
+}
+img.aside:hover{
+	width:600px;
+	margin-left:-450px;
+	position: absolute;
 }
 ul{
 	font-family:'Signika', Century, sans-serif;
