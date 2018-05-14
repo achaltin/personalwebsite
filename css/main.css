@@ -183,7 +183,10 @@ section{
 .right{
 	width: 50%;
 }
-
+.juicer{
+	margin-left:850px;
+	position:absolute;
+}
 @media screen and (max-width:450px){
 	.left{
 		width:100%;
@@ -203,5 +206,9 @@ section{
 	}
 	img.aside{
 		width:100%;
+	}
+	.juicer{
+		position:absolute;
+		margin-top:2500px;
 	}
 }
