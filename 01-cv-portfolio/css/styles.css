@@ -136,9 +136,9 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 	right: 0; background: rgba(0,0,0, .2); }
 	
 .intro-section:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-	height: 150px; z-index: -1; background: #fff; }
+	height: 150px; z-index: -1; background: darkslategray; }
 
-.intro{ padding: 0 20px; margin-top: 100px; text-align: center; background: #fff; }
+.intro{ padding: 0 20px; margin-top: 100px; margin-bottom:50px; text-align: center; background: #fff; }
 
 .intro .profile-img{ height: 200px; width: 200px; border-radius: 100px; margin: 0 auto; 
 	overflow: hidden; position: relative; top: -100px; margin-bottom: -70px;  }
@@ -160,13 +160,12 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 5. PORFOLIO SECTION
 --------------------------------- */
 
-.portfolio-section{ padding-bottom: 0; }
+.portfolio-section{ position: relative; padding: 100px 0 70px; background-size: cover; z-index: 1; 
+	background-image: url(../../images/marble_background.jpg); color: #fff; }
 
-.portfolio-section .portfolioFilter{ margin-top: 60px; color: #666; }
+.portfolio-section:after{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
+	right: 0; background: rgba(0,0,0, .2); }
 
-.portfolio-section .portfolioFilter a{ margin: 10px 10px 0 0; }
-
-.portfolio-section .portfolioFilter a.current{  color: #2ABB9C; }
 
 .portfolio-section .portfolioContainer{ text-align: center; margin-left:170px; margin-right:170px }
 
@@ -216,7 +215,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .education-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
 	width: 2px; background: #ccc; }
 
-.education-wrapper .education{ position: relative; }
+.education-wrapper .education{ position: relative; padding-right:50px; }
 
 .education-wrapper .education:after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px; 
 	height: 16px; border-radius: 10px; z-index: 1;
@@ -227,6 +226,23 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .education .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
 	
+
+
+	.organization-wrapper{ position: relative; }
+
+	.organization-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
+		width: 2px; background: #ccc; }
+	
+	.organization-wrapper .organization{ position: relative; padding-right:50px; }
+	
+	.organization-wrapper .organization:after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px; 
+		height: 16px; border-radius: 10px; z-index: 1;
+		box-shadow: 0 0 0 8px #97e7d6; background: #2ABB9C; }
+	
+	.organization .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
+	
+	.organization .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+		width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
 /* ---------------------------------
 9. COUNTER SECTION
 --------------------------------- */
@@ -265,3 +281,17 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .copyright{ text-align: center; padding: 30px 0; background:darkslategrey; }
 
+	
+
+/* ---------------------------------
+7. SOCIAL-MEDIA SECTION
+--------------------------------- */
+
+.social-media-section{ background: darkslategrey; color: #fff; }
+
+.social-media .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
+
+.social-media .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
+
+	
