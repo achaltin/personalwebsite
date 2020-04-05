@@ -53,7 +53,35 @@ h4{ font-size: 1.3em; }
 h5{ font-size: 1em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
 
-iframe{ border:1px solid #2ABB9C; padding:2px}
+iframe{ 
+	border:2px solid black; 
+	padding:0;
+	background-color: white;
+	height:400px;
+	width: 300px;
+}
+
+.iframe-wrapper{
+	padding:20px;
+	border: 2px solid black;
+	background-color:white; 
+	width:340px;
+	margin:10px;
+}
+
+.iframe-text h4{
+	color: #333;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.iframe-text p{
+	font-size:.8em;
+	text-align: left;
+}
+
 a, button{ display: inline-block; text-decoration: underline; color: inherit; line-height: 1; 
 	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
 
