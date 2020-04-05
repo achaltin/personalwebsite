@@ -152,6 +152,11 @@ header .downlad-btn{ padding: 15px 30px; border-radius: 4px; float: right; margi
 
 header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: translateY(-4px); }
 
+header a:hover{
+	color:darkslategrey;
+	text-decoration:underline;
+	font-size:1.1em;
+}
 
 /* ---------------------------------
 4. INTRO SECTION
